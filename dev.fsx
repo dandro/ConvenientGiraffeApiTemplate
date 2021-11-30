@@ -29,7 +29,7 @@ Target.create
         let result: Engine.DatabaseUpgradeResult =
             DeployChanges
                 .To
-                .PostgresqlDatabase("Host=db;Port=5432;User ID=postgres;Password=insecuredbpassword;Database=localuser")
+                .PostgresqlDatabase("Host=db;Port=5432;User ID=postgres;Password=insecuredbpassword;Database=localdb")
                 .WithScriptsFromFileSystem(@"migrations")
                 .LogToConsole()
                 .Build()

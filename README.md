@@ -28,34 +28,14 @@ Run `dotnet tool restore` to install the tools. Then `dotnet restore` to install
 To start the services run `docker compose -f docker-compose.dev.yml up` or 
 `docker compose -f docker-compose.dev.yml up --build` to rebuild the images.
 
-# Stack Documentation
+## Stack Documentation
 
-A [Giraffe](https://github.com/giraffe-fsharp/Giraffe) web application, which has been created via the `dotnet new giraffe` command.
-
-## Build and test the application
-
-### Windows
-
-Run the `build.bat` script in order to restore, build and test (if you've selected to include tests) the application:
-
-```
-> ./build.bat
-```
-
-### Linux/macOS
-
-Run the `build.sh` script in order to restore, build and test (if you've selected to include tests) the application:
-
-```
-$ ./build.sh
-```
-
-## Run the application
-
-After a successful build you can start the web application by executing the following command in your terminal:
-
-```
-dotnet run -p src/ConvenientGiraffeApiTemplate
-```
-
-After the application has started visit [http://localhost:5000](http://localhost:5000) in your preferred browser.
+- [F#](https://fsharp.org/)
+- [Giraffe](https://github.com/giraffe-fsharp/Giraffe)
+- [FAKE](https://fake.build/fake-gettingstarted.html)
+- [Docker](https://docs.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Fantomas](https://github.com/fsprojects/fantomas)
+- [PostgreSQL](https://www.postgresql.org/)
+- [DbUp](https://dbup.github.io/)
+- [SQLProvider](https://fsprojects.github.io/SQLProvider/)

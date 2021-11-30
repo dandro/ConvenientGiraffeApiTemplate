@@ -18,7 +18,7 @@
     <PackageReference Include="dbup-postgresql" Version="4.5.0" />
     <PackageReference Include="FSharp.SystemTextJson" Version="0.17.4" />
     <PackageReference Include="Giraffe" Version="5.0.0-rc-6" />
-    <PackageReference Include="Npgsql" Version="6.0.0" />
+    <PackageReference Include="Npgsql" Version="5.0.11" />
     <PackageReference Include="Ply" Version="0.3.*" />
     <PackageReference Include="SQLProvider" Version="1.2.10" />
   </ItemGroup>
@@ -26,6 +26,7 @@
   <ItemGroup>
     <Compile Include="Models.fs" />
     <Compile Include="HttpHandlers.fs" />
+    <Compile Include="DataStore.fs" />
     <Compile Include="Program.fs" />
     <Content Include="appsettings.json" />
   </ItemGroup>
