@@ -1,0 +1,8 @@
+src/ConvenientGiraffeApiTemplate/bin
+src/ConvenientGiraffeApiTemplate/obj
+.git
+.idea
+README.md
+.fake
+*.fsx.lock
+devops

@@ -8,10 +8,8 @@ module HttpHandlers =
     open ConvenientGiraffeApiTemplate.Models
 
     let handleGetHello =
-        fun (next : HttpFunc) (ctx : HttpContext) ->
+        fun (next: HttpFunc) (ctx: HttpContext) ->
             task {
-                let response = {
-                    Text = "Hello world, from Giraffe!"
-                }
+                let response = { Text = "Hello world, from Giraffe!" }
                 return! json response next ctx
             }

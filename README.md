@@ -10,6 +10,24 @@ A convenient template project to quickly get started with a Giraffe API in F#. I
 
 *This project has only been tested in Windows with a POSIX command line*
 
+## Dependencies
+
+You must have .Net SDK 5, Docker and a command line tool to use this template.
+
+## How to use
+
+Clone the project then rename all instances of `ConvenientGiraffeApiTemplate` to the name of 
+your project. Modify the `dev.fsx` to point to the project you want to watch.
+
+### Restore Tools & Dependencies
+
+Run `dotnet tool restore` to install the tools. Then `dotnet restore` to install dependencies.
+
+### Run It
+
+To start the services run `docker compose -f docker-compose.dev.yml up` or 
+`docker compose -f docker-compose.dev.yml up --build` to rebuild the images.
+
 # Stack Documentation
 
 A [Giraffe](https://github.com/giraffe-fsharp/Giraffe) web application, which has been created via the `dotnet new giraffe` command.

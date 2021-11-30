@@ -1,0 +1,18 @@
+﻿version: "3.8"
+
+services:
+  db:
+    build:
+      dockerfile: "devops/db.dev.Dockerfile"
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      dockerfile: "devops/app.dev.Dockerfile"
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./src:/app/src"
+    depends_on:
+      - db
