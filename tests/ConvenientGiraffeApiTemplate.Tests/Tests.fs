@@ -1,14 +1,11 @@
 module Tests
 
-open System
 open System.IO
 open System.Net
 open System.Net.Http
 open Xunit
-open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
 open Microsoft.AspNetCore.TestHost
-open Microsoft.Extensions.DependencyInjection
 
 // ---------------------------------
 // Helper functions (extend as you need)
@@ -17,8 +14,8 @@ open Microsoft.Extensions.DependencyInjection
 let createHost() =
     WebHostBuilder()
         .UseContentRoot(Directory.GetCurrentDirectory())
-        .Configure(Action<IApplicationBuilder> ConvenientGiraffeApiTemplate.App.configureApp)
-        .ConfigureServices(Action<IServiceCollection> ConvenientGiraffeApiTemplate.App.configureServices)
+        .Configure(ConvenientGiraffeApiTemplate.App.configureApp)
+        .ConfigureServices(ConvenientGiraffeApiTemplate.App.configureServices)
 
 let runTask task =
     task
