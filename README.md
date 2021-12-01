@@ -1,5 +1,7 @@
 # Convenient Giraffe API Template
 
+*WARNING: This is a work in progress. Check the TODO section to know what is missing.*
+
 A convenient template project to quickly get started with a Giraffe API in F#. It includes:
 
 - Docker & Docker Compose
@@ -27,6 +29,12 @@ Run `dotnet tool restore` to install the tools. Then `dotnet restore` to install
 
 To start the services run `docker compose -f docker-compose.dev.yml up` or 
 `docker compose -f docker-compose.dev.yml up --build` to rebuild the images.
+
+## TODO
+
+- Fix and enhance testing project
+- Add convenient infrastructure setup for AWS
+- Add prod FAKE, Docker and DB configs
 
 ## Stack Documentation
 
